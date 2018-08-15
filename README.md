@@ -2,4 +2,4 @@
 
 
 
-Course: websamuraj.pl
+Course www.samurajprogramowania.pl
