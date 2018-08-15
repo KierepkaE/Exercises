@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .wrap {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        
+        clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        nav,
+        header {
+            height: 360px;
+        }
+        
+        nav {
+            float: left;
+            width: 300px;
+        }
+        
+        nav ul {
+            list-style: none;
+        }
+        
+        nav a {
+            display: block;
+            line-height: 72px;
+            font-size: 22px;
+            color: black;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0 5px 0 30px;
+        }
+        
+        nav.desktop a:hover i {
+            margin-right: 50px;
+        }
+        
+        nav.desktop a:hover {
+            background-color: #ddd;
+        }
+        
+        nav.desktop i {
+            width: 50px;
+            border-right: 2px solid black;
+            margin-right: 30px;
+            transition: .3s;
+        }
+        
+        header {
+            float: left;
+            width: calc(100% - 300px);
+            background-image: url("shop.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        
+        h1 {
+            display: inline-block;
+            font-size: 40px;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        nav.desktop {
+            display: block;
+        }
+        
+        nav.mobile {
+            display: none;
+        }
+        
+        @media(max-width: 1024px) {
+            nav.desktop {
+                display: none;
+            }
+            nav.mobile {
+                position: fixed;
+                display: block;
+                width: 72px;
+                height: 100%;
+                background-color: #888;
+                color: white;
+            }
+            nav.mobile a {
+                display: block;
+                line-height: 10vh;
+                color: white;
+                font-size: 30px;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                width: 100%;
+            }
+            nav i {
+                color: white;
+            }
+            section {
+                margin-left: 72px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap clearfix">
+        <nav class="desktop">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="far fa-play-circle"></i>Start</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>Offer</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-rss"></i>Blog</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="far fa-calendar-alt"></i>Calendar</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="far fa-envelope"></i>Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="mobile">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="far fa-play-circle"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-rss"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="far fa-calendar-alt"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <header></header>
+    </div>
+    <section>
+        <h1>Welcome in our shop</h1>
+    </section>
+</body>
+
+</html>
