@@ -1,4 +1,4 @@
-# Sample 1
+# shop header navigation 
 
 ### simple shop navigation 
 - HTML
